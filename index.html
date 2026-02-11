@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LMS Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS Files -->
+    <script src="auth.js" defer></script>
+    <script src="dashboard.js" defer></script>
+    <script src="courses.js" defer></script>
+    <script src="assignments.js" defer></script>
+    <script src="profile.js" defer></script>
+    <script src="theme.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+
+<!-- ================= LOGIN ================= -->
+
+<div class="login-box" id="loginPage">
+
+    <h2>Login</h2>
+
+    <form id="loginForm">
+
+        <input type="text" id="username" placeholder="Username">
+
+        <input type="password" id="password" placeholder="Password">
+
+        <p id="error"></p>
+
+        <button type="submit">Login</button>
+
+    </form>
+
+</div>
+
+<!-- ================= DASHBOARD ================= -->
+
+<div class="app hidden" id="app">
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+
+        <h2>LMS</h2>
+
+        <a href="#" class="nav active" data-page="dashboard">Dashboard</a>
+        <a href="#" class="nav" data-page="courses">Courses</a>
+        <a href="#" class="nav" data-page="assignments">Assignments</a>
+        <a href="#" class="nav" data-page="profile">Profile</a>
+
+        <button id="themeToggle">Theme</button>
+
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+
+        <!-- Top Bar -->
+        <div class="topbar">
+
+            <button id="menuBtn">☰</button>
+
+            <h2 id="pageTitle">Dashboard</h2>
+
+        </div>
+
+        <!-- Dashboard -->
+        <section id="dashboard" class="page">
+
+            <h3>Statistics</h3>
+
+            <div id="cards" class="cards"></div>
+
+        </section>
+
+        <!-- Courses -->
+        <section id="courses" class="page hidden">
+
+            <h3>My Courses</h3>
+
+            <div id="courseList"></div>
+
+        </section>
+
+        <!-- Assignments -->
+        <section id="assignments" class="page hidden">
+
+            <h3>Assignments</h3>
+
+            <div id="assignmentsList"></div>
+
+        </section>
+
+        <!-- Profile -->
+        <section id="profile" class="page hidden profile">
+
+            <h3>My Profile</h3>
+
+            <input type="text" value="Student Name" disabled>
+            <input type="email" value="student@email.com" disabled>
+
+            <br><br>
+
+            <button id="editBtn">Edit</button>
+            <button id="saveBtn" class="hidden">Save</button>
+
+        </section>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+
