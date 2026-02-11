@@ -30,8 +30,43 @@ This project demonstrates client-side interactivity, dynamic UI updates, and res
 
 No frameworks or libraries used.
 
----
-
 ## 📁 Project Structure
 
+---
 
+lms-ui-dashboard/
+│
+├── index.html
+├── style.css
+├── main.js
+├── README.md
+## ▶ How to Run   👈 PASTE YOUR CONTENT HERE
+
+1. Download or clone this repository
+2. Open `index.html` in any browser
+3. Enter username & password
+4. Access LMS Dashboard
+
+No server required.
+## 📚 Academic Use
+
+This project is created for educational purposes to demonstrate:
+
+- DOM Manipulation
+- Event Handling
+- UI Logic
+- JavaScript Modules
+- Client-side Validation
+
+## 👩‍💻 Author
+
+**Mounika P**  
+CSBS Student  
+
+---
+
+## 📜 License
+
+This project is open-source and free to use for learning purposes.
+
+---
